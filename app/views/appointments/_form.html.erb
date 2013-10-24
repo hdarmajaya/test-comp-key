@@ -1,0 +1,6 @@
+<%= simple_form_for(@appointment) do |f| %>
+  <%= f.association :physician %>
+  <%= f.association :patient %>
+  <%= f.input :appointment_date %>
+  <%= f.button :submit %>
+<% end %>
